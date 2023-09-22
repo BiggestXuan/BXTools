@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>麻将清算计划</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="bx.css">
+    <script src="majiang.js"></script>
+</head>
+<body>
+    <h1>麻将清算计划</h1>
+    <h2>用途：输入四个人的输赢，和每注金额，即可算出每个人互相要转的金额数量。</h2>
+    <h2>原配筹码：<input type="text" id="mj_base"></h2>
+    <h2>每注金额：<input type="text" id="mj_rate"></h2>
+    <table class="mj_tb">
+        <th></th>
+        <th></th>
+        <th></th>
+        <tr>
+            <td></td>
+            <td>对家<input type="text" id="mj1"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>上家<input type="text" id="mj2"></td>
+            <td></td>
+            <td>下家<input type="text" id="mj3"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>本家<input type="text" id="mj4"></td>
+            <td></td>
+
+        </tr>
+        <button id="mj_bt">确认</button>
+        </table>
+    <!--
+        <p>赢家：<span id="mj_winner"></span></p>
+        <p>输家：<span id="mj_loser"></span></p>
+    -->
+    <p>结果：<span id="result"></span></p>
+</body>
