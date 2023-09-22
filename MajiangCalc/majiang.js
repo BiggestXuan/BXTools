@@ -52,7 +52,8 @@ function calc(WinnerArray,LoserArray){
                     "reward":min(-loser.score,winner.score)
                 })
                 if(-loser.score == winner.score){
-                    
+                    winner.score = 0
+                    loser.score = 0
                 }else if(-loser.score < winner.score){
                     winner.score += loser.score
                     loser.score = 0
